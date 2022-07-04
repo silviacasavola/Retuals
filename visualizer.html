@@ -14,24 +14,23 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
     <!-- Computer stylesheet -->
-    <link rel='stylesheet' type='text/css' href='css/scheme.css'>
+    <link rel='stylesheet' type='text/css' href='_css/scheme.css'>
 
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-
   </head>
 
 
 <body style="max-width: 100vw; max-height: 100vh; overflow: hidden;">
 
-  <!-- HEADER -->
-  <div class="d-flex justify-content-between align-items-center header sans vw-100" style="background-color: transparent">
-      <div class="d-lg-inline d-block"><a href="visualizer.html"><img src="assets/img/logo.png"></a></div>
-      <div class="d-lg-inline-flex d-flex justify-content-between">
-      <a href="about.html" class="navigator" id="header-about">ABOUT</a>
-      <div id="projects-menu" class="navigator">PROJECTS</div>
-      </div>
-  </div>
+<!-- HEADER -->
+<div class="d-flex justify-content-between align-items-center header sans vw-100" style="background-color: transparent !Important">
+    <div class="d-inline-flex h-100"><a href="visualizer.html"><img src="assets/img/logo.png"></a></div>
+    <div class="d-inline-flex">
+    <a href="about.html" class="navigator">ABOUT</a>
+    <div id="projects-menu" class="navigator" onClick="openMenu()">PROJECTS</div>
+    </div>
+</div>
 
 <main>
 
@@ -61,106 +60,20 @@
   </div>
 
   <div class="info-nascosta" id="info">
-        <!-- <img id="project-img"> -->
-        <div id="project-line-container">
-        <svg id="project-line" version="1.1" xmlns="http://www.w3.org/2000/svg" style="border:solid">
-          <!-- <g fill="none" stroke="black" stroke-width="1.5">
-            <path stroke-dasharray="5,5" d="M0 0 l0 0">
-          </g> -->
-        <!-- <line style="line {stroke:rgb(0, 0, 0); stroke-width: 2" stroke-dasharray="5, 5" x1="0" y1="1" x2="600" y2="498" style="stroke-width: 1px;"></line> -->
-        </svg>
-      </div>
-
-    <a class="sans caps rito2"></a>
-    <span class="sans caps" id="progetto"></span>
-
-  </div>
+        <a class="sans caps rito2"></a><br>
+        <!-- <img style="height: 32px" class="rito-start" src="assets/scheme/icon1.png"> -->
+        <span class="sans caps" id="progetto"></span>
+        <!-- <img style="height: 32px" class="rito-end" src="assets/scheme/icon2.png"> -->
+        <img id="project-img">
+        <!-- <div id="project-line"><img id="project-line-id" src="assets/img/scheme/line.svg"></div> -->
   </div>
 </div>
 
 </main>
-
-<!-- MENU -->
-    <div id="menu" class="d-flex flex-column">
-      <div class="row d-inline-flex">
-          <div class="col-6 sans"><a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a></div>
-          <div class="col-6 sans text-end" style="-webkit-user-select: none" onclick="closeMenu()">PROJECTS</div>
-      </div>
-
-
-  <div id="menu-list-container" class="d-inline-flex flex-column justify-content-center" style="height: 100%">
-
-      <div class="row d-inline-flex align-items-lg-baseline align-items-center justify-content-between">
-        <div class="col-4 col-lg-1 text-small sans"><a href="persona.html">01</a></div>
-        <div class="col-7 d-none d-lg-inline d-inline text-small sans text-center"><a href="persona.html">MASCHERA</a></div>
-        <div class="col d-inline text-extralarge-bit"><a href="persona.html">PERSONA</a></div>
-      </div>
-
-    <div class="row d-inline-flex align-items-lg-baseline align-items-center">
-      <div class="col-4 col-lg-1 text-small sans align-self-baseline"><a href="tod.html">02</a></div>
-      <div class="col-7 d-none d-lg-inline text-small sans align-self-baseline text-center"><a href="tod.html">COMMEMORAZIONE</a></div>
-      <div class="col text-extralarge-bit align-self-baseline"><a href="tod.html">TOD</a></div>
-    </div>
-
-    <div class="row d-inline-flex align-items-lg-baseline align-items-center">
-      <div class="col-4 col-lg-1 text-small sans align-self-baseline"><a href="protestars.html">03</a></div>
-      <div class="col-7 d-none d-lg-inline text-small sans align-self-baseline text-center"><a href="protestars.html">PROTESTA</a></div>
-      <div class="col text-extralarge-bit align-self-baseline"><a href="protestars.html">PROTESTARS</a></div>
-    </div>
-
-  <div class="row d-inline-flex align-items-lg-baseline align-items-center">
-    <div class="col-4 col-lg-1 text-small sans align-self-baseline"><a href="lusting.html">04</a></div>
-    <div class="col-7 d-none d-lg-inline text-small sans align-self-baseline text-center"><a href="lusting.html">CORTEGGIAMENTO</a></div>
-    <div class="col text-extralarge-bit align-self-baseline"><a href="lusting.html">LUSTING</a></div>
-  </div>
-
-  <div class="row d-inline-flex align-items-lg-baseline align-items-center">
-    <div class="col-4 col-lg-1 text-small sans align-self-baseline"><a href="12uomo.html">05</a></div>
-    <div class="col-7 d-none d-lg-inline text-small sans align-self-baseline text-center"><a href="12uomo.html">TIFOSERIA</a></div>
-    <div class="col text-extralarge-bit align-self-baseline"><a href="12uomo.html">12°UOMO</a></div>
-  </div>
-
-<div class="row d-inline-flex align-items-lg-baseline align-items-center">
-  <div class="col-4 col-lg-1 text-small sans align-self-baseline"><a href="apto.html">06</a></div>
-  <div class="col-7 d-none d-lg-inline text-small sans align-self-baseline text-center"><a href="apto.html">SALUTO</a></div>
-  <div class="col text-extralarge-bit align-self-baseline"><a href="apto.html">APTO</a></div>
-</div>
-
-<div class="row d-inline-flex align-items-lg-baseline align-items-center">
-  <div class="col-4 col-lg-1 text-small sans align-self-baseline"><a href="lineo.html">07</a></div>
-  <div class="col-7 d-none d-lg-inline text-small sans align-self-baseline text-center"><a href="lineo.html">SUPERSTIZIONE</a></div>
-  <div class="col text-extralarge-bit align-self-baseline"><a href="lineo.html">LINEO</a></div>
-</div>
-
-<div class="row d-inline-flex align-items-lg-baseline align-items-center">
-<div class="col-4 col-lg-1 text-small sans align-self-baseline"><a href="vireo.html">08</a></div>
-<div class="col-7 d-none d-lg-inline text-small sans align-self-baseline text-center"><a href="vireo.html">VERGINITà</a></div>
-<div class="col text-extralarge-bit align-self-baseline"><a href="vireo.html">VIREO</a></div>
-</div>
-
-<div class="row d-inline-flex align-items-lg-baseline align-items-center">
-<div class="col-4 col-lg-1 text-small sans align-self-baseline"><a href="noxa.html">09</a></div>
-<div class="col-7 d-none d-lg-inline text-small sans align-self-baseline text-center"><a href="noxa.html">CONFESSIONE</a></div>
-<div class="col text-extralarge-bit align-self-baseline"><a href="noxa.html">NOXA</a></div>
-</div>
-
-<div class="row d-inline-flex align-items-lg-baseline align-items-center">
-<div class="col-4 col-lg-1 text-small sans align-self-baseline"><a href="oikia.html">10</a></div>
-<div class="col-7 d-none d-lg-inline text-small sans align-self-baseline text-center"><a href="oikia.html">OSPITALITà</a></div>
-<div class="col text-extralarge-bit align-self-baseline"><a href="oikia.html">OIKIA</a></div>
-</div>
-
-<div class="row d-inline-flex align-items-lg-baseline align-items-center" style="margin-bottom: 0 !Important">
-<div class="col-4 col-lg-1 text-small sans align-self-baseline"><a href="viatora.html">11</a></div>
-<div class="col-7 d-none d-lg-inline text-small sans align-self-baseline text-center"><a href="viatora.html">PELLEGRINAGGIO</a></div>
-<div class="col text-extralarge-bit align-self-baseline"><a href="viatora.html">VIATORA</a></div>
-</div>
-  </div>
-</div>
 </body>
 
 
-    <script src="./assets/js/header.js"></script>
+    <script src="./assets/js/menu.js"></script>
     <script src="./assets/js/scheme.js"></script>
 
 <!-- <script>
