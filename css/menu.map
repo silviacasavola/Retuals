@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "menu.css",
+	"sources": [
+		"../_sass/menu.scss",
+		"../_sass/_variables.scss"
+	],
+	"sourcesContent": [
+		"@import \"_variables\";\n\n/* The side navigation menu */\n#menu {\n  height: 100%;\n  width: 40vw;\n  position: fixed;\n  z-index: 200;\n  top: 0;\n  left: 100%;\n  background-color: white;\n  overflow-x: hidden;\n\n  transition: 0.5s;\n\n  text-transform: uppercase;\n\n  overflow: hidden;\n  padding: $margin-width;\n}\n\n#menu-list-container {\n  // padding-top: 3rem;\n\n.row {\n  margin-bottom: 1.5rem;\n}\n}\n\n#menu a {\n  // padding: 8px 8px 8px 32px;\n  text-decoration: none;\n  // font-size: 25px;\n  color: black;\n  // display: block;\n  // transition: 0.3s;\n}\n\n/* When you mouse over the navigation links, change their color */\n#menu a:hover {\n  // color: #f1f1f1;\n}\n\n/* Position and style the close button (top right corner) */\n#menu .closebtn {\n  cursor: pointer;\n  line-height: 0.2;\n}\n\n\n// @media screen and (max-height: 450px) {\n//   .menu {padding-top: 15px;}\n//   .menu a {font-size: 18px;}\n// }\n",
+		"$header-height: 80px;\n$header-height-mobile: 60px;\n\n// $header-height: (\"mobile\": $grid-gutter-width * 3.5, \"desktop\": 70px);\n\n$margin-width: 30px;\n$margin-width-mobile: 20px;\n\n$border-width: 1px;\n\n$grey: #c6c6c6;\n\n$base-font-size: 16px;\n$base-font-family: 'karbon-web', sans-serif;\n\n$container-max-widths: (\n        sm: 540px,\n        md: 720px,\n        lg: 1160px,\n        xl: 1400px\n) !default;\n\n$grid-breakpoints: (\n        xs: 0,\n        sm: 576px,\n        md: 768px,\n        lg: 992px,\n        xl: 1440px,\n        xxl: 1920px\n);\n\n$container-max-widths: (\n        sm: 540px,\n        md: 720px,\n        lg: 1160px,\n        xl: 1400px,\n        xxl: 1700px\n);\n\n\n\n$grid-gutter-width: 20px !default;\n"
+	],
+	"names": [],
+	"mappings": "AAEA,8BAA8B;;AAC9B,AAAA,KAAK,CAAC;EACJ,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,IAAI;EACX,QAAQ,EAAE,KAAK;EACf,OAAO,EAAE,GAAG;EACZ,GAAG,EAAE,CAAC;EACN,IAAI,EAAE,IAAI;EACV,gBAAgB,EAAE,KAAK;EACvB,UAAU,EAAE,MAAM;EAElB,UAAU,EAAE,IAAI;EAEhB,cAAc,EAAE,SAAS;EAEzB,QAAQ,EAAE,MAAM;EAChB,OAAO,ECbM,IAAI,GDclB;;;AAED,AAGA,oBAHoB,CAGpB,IAAI,CAAC;EACH,aAAa,EAAE,MAAM,GACtB;;;AAGD,AAAA,KAAK,CAAC,CAAC,CAAC;EAEN,eAAe,EAAE,IAAI;EAErB,KAAK,EAAE,KAAK,GAGb;;AAED,kEAAkE;AAKlE,4DAA4D;;AAC5D,AAAA,KAAK,CAAC,SAAS,CAAC;EACd,MAAM,EAAE,OAAO;EACf,WAAW,EAAE,GAAG,GACjB"
+}

@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "Suisse Intl";
+  src: url("../assets/font/SuisseIntl-Regular.otf"), url("./assets/font/SuisseIntl-Regular.otf") format("embedded-opentype"), url("./assets/font/SuisseIntl-Regular.otf") format("truetype"), url("./assets/font/SuisseIntl-Regular.otf") format("woff"), url("./assets/font/SuisseIntl-Regular.otf") format("woff2"), local("Suisse Intl");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block; }
+
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("../assets/font/PPNeueMontreal-Book.otf"), url("./assets/font/PPNeueMontreal-Book.otf") format("embedded-opentype"), url("./assets/font/PPNeueMontreal-Book.otf") format("truetype"), url("./assets/font/PPNeueMontreal-Book.otf") format("woff"), url("./assets/font/PPNeueMontreal-Book.otf") format("woff2"), local("Neue Montreal");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block; }
+
+@font-face {
+  font-family: "Editorial New";
+  src: url("../assets/font/PPEditorialNew-Ultralight.otf"), url("./assets/font/PPEditorialNew-Ultralight.otf") format("embedded-opentype"), url("./assets/font/PPEditorialNew-Ultralight.otf") format("truetype"), url("./assets/font/PPEditorialNew-Ultralight.otf") format("woff"), url("./assets/font/PPEditorialNew-Ultralight.otf") format("woff2"), url("./assets/font/PPEditorialNew-Ultralight.otf") format("svg"), local("Editorial New");
+  font-weight: ultralight;
+  font-style: normal;
+  font-display: block; }
+
+@font-face {
+  font-family: "NeueBit";
+  src: url("../assets/font/NeueBit-Bold.otf"), url("./assets/font/NeueBit-Bold.otf") format("embedded-opentype"), url("./assets/font/NeueBit-Bold.otf") format("truetype"), url("./assets/font/NeueBit-Bold.otf") format("woff"), url("./assets/font/NeueBit-Bold.otf") format("woff2"), url("./assets/font/NeueBit-Bold.otf") format("svg"), local("NeueBit");
+  font-style: normal;
+  font-display: block; }
+
+body {
+  font-size: 16px;
+  line-height: 1.2; }
+
+.text-small {
+  font-size: 0.8rem; }
+
+.text-large {
+  font-size: 1.2rem; }
+
+.text-extralarge {
+  font-size: 2rem; }
+
+.sans {
+  font-family: "Suisse Intl"; }
+
+.serif {
+  font-family: "Editorial New";
+  font-weight: lighter; }
+
+.text-extralarge-bit {
+  font-family: "NeueBit";
+  font-weight: bold;
+  font-size: 2.9rem;
+  line-height: 0.8; }
+
+#menu .text-extralarge-bit {
+  font-family: "NeueBit";
+  font-weight: bold;
+  font-size: 2.2rem;
+  line-height: 0.8; }
+
+.caps {
+  text-transform: uppercase; }
+
+@media (max-width: 991.98px) {
+  .text-small {
+    font-size: 3.5vw; }
+  .text-large {
+    font-size: 1.1rem; }
+  .text-extralarge {
+    font-size: 1.6rem; }
+  .text-extralarge-bit {
+    font-family: "NeueBit";
+    font-weight: bold;
+    font-size: 10vw;
+    line-height: 0.8; }
+  #menu-intro .text-extralarge-bit {
+    font-family: "NeueBit";
+    font-weight: bold;
+    font-size: 6vw;
+    line-height: 0.8; } }
