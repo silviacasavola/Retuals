@@ -176,7 +176,7 @@ $( "#info").css( "display", "block" );
 $("#scheme_name_container").css("display", "none")
 
 $(".rito2").html(prj[index].rito);
-$(".rito2").attr('href', 'projects/' + prj[index].progetto + ".html" );
+$(".rito2").attr('href', prj[index].progetto + ".html" );
 
 $(".rito2").css("left", prj[index].ritox + "%");
 $(".rito2").css("top", prj[index].ritoy + "%");
