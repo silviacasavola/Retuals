@@ -5,7 +5,6 @@ if (window.innerWidth >= 992) {
 }
 
 $("#projects-menu").click(function openMenu() {
-  console.log("ti prego")
   if (window.innerWidth >= 992) {
   $("#menu").css("left", "60vw")
 } else {

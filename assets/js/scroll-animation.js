@@ -1,4 +1,4 @@
-var vTop = $("#enabler").offset().top - parseFloat($("#enabler").css('margin-top').replace(/auto/, 0));
+var vTop = $(".enabler").offset().top - parseFloat($(".enabler").css('margin-top').replace(/auto/, 0));
 
 // console.log(vTop)
 

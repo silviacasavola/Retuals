@@ -169,14 +169,6 @@ body {
 .caps {
   text-transform: uppercase; }
 
-
-  .info-nascosta img {
-    position: absolute; }
-  /* line 188, ../../Desktop/Retuals/_sass/scheme.scss */
-  .info-nascosta #project-img {
-    width: 40vw;
-    border-radius: 50px; }
-
 @media (max-width: 991.98px) {
   .text-small {
     font-size: 3.5vw; }
@@ -228,7 +220,9 @@ body {
 
 @media (max-width: 991.98px) {
   #menu {
-    width: 100vw; } }
+    width: 100vw; }
+  #menu-list-container .row {
+    margin-bottom: 2vh; } }
 
 #scheme {
   position: absolute;
@@ -343,8 +337,7 @@ body {
 
 .rito, .rito2, #progetto {
   background-color: #c6c6c6;
-  cursor: pointer;
-margin:1rem; }
+  cursor: pointer; }
 
 #scheme a, #scheme span {
   position: absolute;

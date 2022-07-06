@@ -31,4 +31,6 @@
 
 @media (max-width: 991.98px) {
   #menu {
-    width: 100vw; } }
+    width: 100vw; }
+  #menu-list-container .row {
+    margin-bottom: 2vh; } }
