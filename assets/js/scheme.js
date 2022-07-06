@@ -178,7 +178,7 @@ riton.addEventListener("mouseover",(function() {
   // $(".rito-start").css("left", prj[index].ritox + 10 + "%");
   // $(".rito-start").css("top", prj[index].ritoy + "%");
 
-  $(".rito2").attr('href', 'projects/' + prj[index].progetto + ".html" );
+  $(".rito2").attr('href', + prj[index].progetto + ".html" );
 
 
   $("#progetto").html(prj[index].progetto);
