@@ -41,8 +41,8 @@ prj[2] = {
   prjy: 10,
 
   img: "2.png",
-  imgx: "40vw",
-  imgy: "10vh"
+  imgx: "20vw",
+  imgy: "20vh"
 }
 
 prj[3] = {
@@ -69,8 +69,8 @@ prj[4] = {
   prjx: 20,
   prjy: 10,
   img: "2.png",
-  imgx: "40vw",
-  imgy: "10vh"
+  imgx: "30vw",
+  imgy: "15vh"
 }
 
 prj[5] = {
@@ -83,8 +83,8 @@ prj[5] = {
   prjx: 8,
   prjy: 10,
   img: "2.png",
-  imgx: "40vw",
-  imgy: "10vh"
+  imgx: "20vw",
+  imgy: "15vh"
 }
 
 prj[6] = {
@@ -97,8 +97,8 @@ prj[6] = {
   prjx: 20,
   prjy: 10,
   img: "2.png",
-  imgx: "40vw",
-  imgy: "10vh"
+  imgx: "50vw",
+  imgy: "20vh"
 }
 
 prj[7] = {
@@ -111,22 +111,22 @@ prj[7] = {
   prjx: 20,
   prjy: 10,
   img: "2.png",
-  imgx: "40vw",
-  imgy: "10vh"
+  imgx: "5vw",
+  imgy: "25vh"
 }
 
 prj[8] = {
   rito: "confessione",
 
-  ritox: 680,
+  ritox: 85,
   ritoy: 15,
 
   progetto: "noxa",
   prjx: 20,
   prjy: 10,
   img: "2.png",
-  imgx: "40vw",
-  imgy: "10vh"
+  imgx: "30vw",
+  imgy: "20vh"
 }
 
 prj[9] = {
@@ -139,8 +139,8 @@ prj[9] = {
   prjx: 10,
   prjy: 25,
   img: "2.png",
-  imgx: "40vw",
-  imgy: "10vh"
+  imgx: "30vw",
+  imgy: "15vh"
 }
 
 prj[10] = {
@@ -153,74 +153,72 @@ prj[10] = {
   prjx: 20,
   prjy: 10,
   img: "2.png",
-  imgx: "40vw",
-  imgy: "10vh"
+  imgx: "30vw",
+  imgy: "20vh"
 }
 
 const rito = document.querySelectorAll(".rito");
 let x;
 var riton;
-var stop;
 
 rito.forEach(function (item, index) {
 riton = rito[index];
 
-riton.style.left = prj[index].ritox + "%";
+riton.style.left = prj[index].ritox + "%";-'0'
 riton.style.top = prj[index].ritoy + "%";
 
-
-
 riton.addEventListener("mouseover",(function() {
-console.log("ma io che cazzo ho fatto d male")
-$( "#info").css( "display", "block" );
-$("#scheme_name_container").css("display", "none")
 
-$(".rito2").html(prj[index].rito);
-$(".rito2").attr('href', prj[index].progetto + ".html" );
+  $( "#info").css( "display", "block" );
+  $("#scheme_name_container").css("display", "none")
+  $(".rito2").html(prj[index].rito);
+  // $(".rito2").attr('id', 'rito-' + (index + 1) );
+  $(".rito2").css("left", prj[index].ritox + "%");
+  $(".rito2").css("top", prj[index].ritoy + "%");
+  // $(".rito-start").css("left", prj[index].ritox + 10 + "%");
+  // $(".rito-start").css("top", prj[index].ritoy + "%");
 
-$(".rito2").css("left", prj[index].ritox + "%");
-$(".rito2").css("top", prj[index].ritoy + "%");
+  $(".rito2").attr('href', 'projects/' + prj[index].progetto + ".html" );
 
-$("#progetto").html(prj[index].progetto);
-$("#progetto").css("left", prj[index].prjx + "%");
-$("#progetto").css("top", prj[index].prjy + "%");
 
-stop = true;
+  $("#progetto").html(prj[index].progetto);
+  $("#progetto").css("left", prj[index].prjx + "%");
+  $("#progetto").css("top", prj[index].prjy + "%");
+  // $(".rito-end").css("left", prj[index].prjx + 10 + "%");
+  // $(".rito-end").css("top", prj[index].prjy + "%");
 
-if (stop === true) {
-line(item, index)
-}
-// $("#project-line path").attr("d", "M0 0 l" + linewidth + " " + lineheight)
+  $("#project-img").attr("src","./assets/img/scheme/" + (index + 1) + ".jpg");
+  $("#project-img").css("left", prj[index].imgx);
+  $("#project-img").css("top", prj[index].imgy);
+
+
+
+  // if (prj[index].ritox < prj[index].prjx) {
+  //   $("#project-line").css ("left", prj[index].ritox + "%");
+  //   $("#project-line").css ("margin-left", riton.width());
+  //   $("#project-line").css ("width", Math.abs(prj[index].prjx - prj[index].ritox) + "%");
+  // } else {
+  //   $("#project-line").css ("left", prj[index].prjx + "%");
+  //   $("#project-line").css ("margin-left", $("#progetto").width());
+  //   $("#project-line").css ("width", Math.abs(prj[index].ritox - prj[index].prjx) + "%");
+  // }
+  //
+  // if (prj[index].ritoy < prj[index].prjy) {
+  //   $("#project-line").css ("top", prj[index].ritoy + "%");
+  //   $("#project-line").css ("height", Math.abs(prj[index].prjy - prj[index].ritoy) + "%");
+  // } else {
+  //   $("#project-line").css ("top", prj[index].prjy + "%");
+  //   $("#project-line").css ("height", Math.abs(prj[index].ritoy - prj[index].prjy) + "%");
+  // }
+
+  // $("#project-line").css ("width", Math.abs(prj[index].prjx - prj[index].ritox) + "%");
+  // $("#project-line").css ("height", Math.abs(prj[index].prjy - prj[index].ritoy) + "%");
 })
 )
 
-function line(item, index) {
-console.log("ma da me che cazzo vuoi?")
-
-  let minX= Math.min(prj[index].ritox, prj[index].prjx);
-  let maxX= Math.max(prj[index].ritox, prj[index].prjx);
-  let minY= Math.min(prj[index].ritoy, prj[index].prjy);
-  let maxY= Math.max(prj[index].ritoy, prj[index].prjy);
-
-  let linecontainerWidth = Math.abs(maxX - minX);
-  let linecontainerHeight = Math.abs(maxY - minY);
-
-
-  $("#project-line-container").css("left", minX  + "%");
-  $("#project-line-container").css("width", linecontainerWidth + "%");
-  $("#project-line-container").css("top", minY + "%");
-  $("#project-line-container").css("height", linecontainerHeight + "%");
-
-  let linewidth= $("#project-line-container").width();
-  let lineheight= $("#project-line-container").height();
-
-  $("#project-line").attr("width", linewidth).attr("height", lineheight)
-}
-
 riton.addEventListener("mouseout",(function() {
   $( "#info").css( "display", "none" );
-  $("#scheme_name_container").css("display", "block");
-  stop = false;
+  $("#scheme_name_container").css("display", "black")
 })
 )
 
