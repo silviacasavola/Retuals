@@ -66,7 +66,6 @@ body::-webkit-scrollbar {
   top: 0;
   left: 0;
   right: 0;
-  background-color: #c6c6c6;
   z-index: 100;
   padding: 0 30px 0 30px; }
   .header .navigator {
@@ -337,7 +336,8 @@ body {
 
 .rito, .rito2, #progetto {
   background-color: #c6c6c6;
-  cursor: pointer; }
+  cursor: pointer;
+margin:1vw; }
 
 #scheme a, #scheme span {
   position: absolute;
@@ -348,3 +348,9 @@ body {
   display: none; }
   #info #project-line-container {
     position: absolute; }
+
+    #project-img {
+    position: absolute;
+    border-radius: 50px;
+    width: 40vw;
+    }
