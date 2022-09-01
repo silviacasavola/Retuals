@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "global.css",
+	"sources": [
+		"../_sass/global.scss",
+		"../_sass/_variables.scss"
+	],
+	"sourcesContent": [
+		"@import \"_variables\";\n\nbody {\n  background-color: $grey;\n  width: 100%;\n  overflow-x: hidden;\n}\n\n.container-fluid {padding: 0;}\n\n\nmain {\n      overflow-x: hidden;\n      margin: $header-height $margin-width 0 $margin-width;\n}\n\na {\n  color: black;\n  text-decoration: none;\n}\na:hover {\n  color: black;\n  text-decoration: underline;\n}\n\n@media (max-width: 991.98px) {\n  main {\n        overflow-x: hidden;\n        margin: $header-height-mobile $margin-width-mobile 0 $margin-width-mobile;\n  }\n\n}\n\n\n.hidden {\n  display: none;\n}\n\nbody::-webkit-scrollbar,  {\n  display: none;\n}\n",
+		"$header-height: 80px;\n$header-height-mobile: 60px;\n\n// $header-height: (\"mobile\": $grid-gutter-width * 3.5, \"desktop\": 70px);\n\n$margin-width: 30px;\n$margin-width-mobile: 20px;\n\n$border-width: 1px;\n\n$grey: #c6c6c6;\n\n$base-font-size: 16px;\n$base-font-family: 'karbon-web', sans-serif;\n\n$container-max-widths: (\n        sm: 540px,\n        md: 720px,\n        lg: 1160px,\n        xl: 1400px\n) !default;\n\n$grid-breakpoints: (\n        xs: 0,\n        sm: 576px,\n        md: 768px,\n        lg: 992px,\n        xl: 1440px,\n        xxl: 1920px\n);\n\n$container-max-widths: (\n        sm: 540px,\n        md: 720px,\n        lg: 1160px,\n        xl: 1400px,\n        xxl: 1700px\n);\n\n\n\n$grid-gutter-width: 20px !default;\n"
+	],
+	"names": [],
+	"mappings": ";AAEA,AAAA,IAAI,CAAC;EACH,gBAAgB,ECOX,OAAO;EDNZ,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,MAAM,GACnB;;;AAED,AAAA,gBAAgB,CAAC;EAAC,OAAO,EAAE,CAAC,GAAG;;;AAG/B,AAAA,IAAI,CAAC;EACC,UAAU,EAAE,MAAM;EAClB,MAAM,ECbI,IAAI,CAKL,IAAI,CDQwB,CAAC,CCR7B,IAAI,GDSlB;;;AAED,AAAA,CAAC,CAAC;EACA,KAAK,EAAE,KAAK;EACZ,eAAe,EAAE,IAAI,GACtB;;;AACD,AAAA,CAAC,AAAA,MAAM,CAAC;EACN,KAAK,EAAE,KAAK;EACZ,eAAe,EAAE,SAAS,GAC3B;;AAED,MAAM,EAAE,SAAS,EAAE,QAAQ;;EACzB,AAAA,IAAI,CAAC;IACC,UAAU,EAAE,MAAM;IAClB,MAAM,EC3BS,IAAI,CAKL,IAAI,CDsBiC,CAAC,CCtBtC,IAAI,GDuBvB;;;AAKH,AAAA,OAAO,CAAC;EACN,OAAO,EAAE,IAAI,GACd;;;AAED,AAAA,IAAI,AAAA,mBAAmB,CAAG;EACxB,OAAO,EAAE,IAAI,GACd"
+}

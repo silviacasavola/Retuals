@@ -29,8 +29,9 @@
     <body>
 
 <!-- HEADER -->
+<div id="header-background"></div>
 <div class="d-flex justify-content-between align-items-center header sans vw-100">
-    <div class="d-lg-inline d-block"><a id="header-home"><img src="assets/img/logo.png"></a></div>
+    <div class="d-lg-inline d-block" id="header-home"><a><img src="assets/img/logo.png"></a></div>
     <div class="d-lg-inline-flex d-flex justify-content-between">
     <a href="about.html" class="navigator" id="header-about">ABOUT</a>
     <div id="projects-menu" class="navigator">PROJECTS</div>
@@ -45,7 +46,7 @@
 
 <div id="project_name" class="text-center">
  <div class="text-extralarge-bit">PROTESTARS</div>
- <div class="sans" style="line-height: 2rem;">A RETAKE ON PROTESTING</div>
+ <div class="sans" style="line-height: 2rem;">A RETAKE ON PROTEST</div>
 </div>
 
 
@@ -66,6 +67,7 @@
       <img src="assets/img/3protestars/4.jpg" class="d-block w-100" alt="image">
     </div>
   </div>
+
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev" onclick="$('#myCarousel').carousel('prev')">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
   </button>
@@ -80,16 +82,19 @@
 <section id="section-one">
   <div id="side-left" class="align-middle">
 
-          <div class="d-lg-flex sans row align-items-end enabler">
+          <div class="d-lg-flex sans row align-items-end">
           <div class="d-lg-inline-flex col-lg-2 col-4 text-small p-0">protestars.com</div>
           <div class="d-lg-inline-flex col-lg-2 col-4 text-small p-0"><a href="https://www.instagram.com/protestars_official/">@protestars_offical</a></div>
-          </div>
+          <div class="enabler" style="padding: 0"></div>
+        </div>
 
-<div id="what-if" class="serif">E se la protesta diventasse
-un atto di selfcare?</div>
+<div id="what-if" class="serif"><span lang="it">E se la protesta diventasse
+un atto di selfcare?</span><span lang="eng">What if protesting
+became an act of self-care?</span>
+</div>
 
         <div class="d-lg-flex sans row align-items-end" >
-        <div class="d-lg-inline-flex col-lg-2 col-12 text-small p-0">A CURA DI</div>
+        <div class="d-lg-inline-flex col-lg-2 col-12 text-small p-0"><span lang="it">A CURA DI</span> <span lang="eng">AUTHORS</span></div>
         <div class="d-lg-inline-flex col-lg-2 col-4 text-small p-0">Alexandra Chiojdeanu<br>Anna Gargantini</div>
         <div class="d-lg-inline-flex col-lg-2 col-4 text-small p-0">Alessia Mattesini<br>Rezeile Gidaya</div>
         <div class="d-lg-inline-flex col-lg-2 col-4 text-small p-0">Annalisa Rusconi</div>
@@ -102,15 +107,15 @@ un atto di selfcare?</div>
 
 </section>
 
-<!-- <div id="enabler" style="padding-bottom: 1.5rem"></div> -->
-
 <section id="big-text-section" class="col-sm-9 col-12 text-wrap sans text-extralarge">
-Partendo da una riflessione sul concetto di protesta come rito, è stata individuata
+<span lang="it">Partendo da una riflessione sul concetto di protesta come rito, è stata individuata
 una sua criticità, ovvero lo slacktivism. Indagando le cause psicologiche e sociali alla base
 di tale fenomeno, è sorta la domanda chiave “E se la protesta diventasse un atto di selfcare?”.<br>
 Da essa segue lo sviluppo a 360° di un fictional brand ed il suo kit speculativo,
 sotto il nome di Protestars, dalla cui interazione si vuole far sorgere nell’utente una
-considerazione in merito al proprio contributo effettivo all’interno delle proteste.
+considerazione in merito al proprio contributo effettivo all’interno delle proteste.</span>
+<span lang="eng">Starting from the concept of protest as ritual, one of its critical aspects, slacktivism, was identified. From the investigation of the psychological and social causes behind this phenomenon, the key question arose: "what if protesting became an act of self-care?". Hence the all-round development of a fictional brand, Protestars, its speculative kit and the designed interactions that intend to provoke in the user a consideration of their actual contribution within the protests.
+</span>
 </section>
 
 
@@ -119,7 +124,7 @@ considerazione in merito al proprio contributo effettivo all’interno delle pro
 
 <!-- IMG -->
 <div id="img-bigger-container">
-<div id="fake-container" style="height: 80vh;"></div>
+<div id="fake-container" style="height: 85vh;"></div>
      <div id="img-container">
       <div class="row" id ="img1"> <div class="col-12 col-md-4">
        <img style="width:100%" src="assets/img/3protestars/5.jpg">
@@ -156,100 +161,110 @@ considerazione in merito al proprio contributo effettivo all’interno delle pro
 </div>
 
 
+<!-- FOOTER -->
 <div id="footer">
   <div class="row sans text-small align-items-end">
-    <div class="col-lg-2 col-9">Politecnico di Milano<br>Design della Comunicazione<br>Lab. di Sintesi Finale sez. C1<br>A.A. 2020-2021</div>
-    <div class="col-lg-2 col-3 order-lg-last align-self-start align-self-lg-baseline" style="text-align: right"><a href="instagram.com"><img src="assets/img/insta-logo.svg"></a></div>
+  <div class="col-lg-2 col-9">
+    <span lang="it">Politecnico di Milano<br>CdL in Design della Comunicazione<br>Laboratorio di Sintesi Finale C1<br>A.A. 2020-2021</span>
+    <span lang="eng">Politecnico di Milano<br>BSc in Communication Design<br>Final Synthesis Studio C1<br>A.Y. 2020-2021</span>
+  </div>
+
+    <div class="col-lg-2 col-3 order-lg-last align-self-start align-self-lg-baseline" style="text-align: right"><a href="https://www.instagram.com/retuals_lsf"><img src="assets/img/insta-logo.svg"></a></div>
     <div class="d-lg-none col-12">&nbsp</div>
-    <div class="col-lg-2 col-6">PROFESSORI<br>Francesco Ermanno Guida<br>Pietro Buffa Di Castelalto</div>
+    <div class="col-lg-2 col-6"><span lang="it">PROFESSORI</span><span lang="eng">PROFESSORS</span><br>Francesco E. Guida<br>Pietro Buffa Di Castelalto</div>
     <div class="col-lg-2 col-6">Alessandro Masserdotti<br>Giacomo Scandolara</div>
     <div class="d-lg-none col-12">&nbsp</div>
-    <div class="col-lg-2 col-6">CULTORI DELLA MATERIA<br>Marcello Biffi<br>Alberto Candido</div>
+    <div class="col-lg-2 col-6"><span lang="it">ASSISTENTI ALLA DIDATTICA</span><span lang="eng">TEACHING ASSISTANTS</span><br>Marcello J. Biffi<br>Alberto Candido</div>
     <div class="col-lg-2 col-6">Michele Invernizzi<br>Andrea Pronzati<br>Claudia Tranti</div>
   </div>
 </div>
 </div>
 </div>
+
+
+<!-- LANGUAGE  SELECTION -->
+<div id="language-selector" class="sans">
+  <a id="itaselector" style="text-decoration: underline">ITA</a> / <a id="engselector">ENG</a>
+</div>
 </main>
 
+
 <!-- MENU -->
-    <div id="menu" class="d-flex flex-column">
-      <div class="row d-inline-flex">
-          <div class="col-6 sans"><a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a></div>
-          <div class="col-6 sans text-end" style="-webkit-user-select: none" onclick="closeMenu()">PROJECTS</div>
-      </div>
+<div href="javascript:void(0)" id="closebtn" class="sans" onClick="closeMenu()">&times;</div>
 
+<div id="menu" class="d-flex flex-column">
 
-  <div id="menu-list-container" class="d-inline-flex flex-column justify-content-center" style="height: 100%">
+<div id="menu-list-container" class="d-inline-flex flex-column justify-content-center" style="height: 100%">
 
       <div class="row d-inline-flex align-items-lg-baseline align-items-center justify-content-between">
-        <div class="col-4 col-lg-1 text-small sans"><a href="persona.html">01</a></div>
-        <div class="col-7 d-none d-lg-inline d-inline text-small sans text-center"><a href="persona.html">MASCHERA</a></div>
-        <div class="col d-inline text-extralarge-bit"><a href="persona.html">PERSONA</a></div>
+        <div class="col-4 col-lg-1 text-small sans"><a href="vireo.html">01</a></div>
+        <div class="col-7 d-none d-lg-inline d-inline text-small sans text-center"><a href="vireo.html"><span lang="it">VERGINITà</span><span lang="eng">VIRGINITY</span></a></div>
+        <div class="col d-inline text-extralarge-bit"><a href="vireo.html">VIREO</a></div>
       </div>
 
     <div class="row d-inline-flex align-items-lg-baseline align-items-center">
       <div class="col-4 col-lg-1 text-small sans align-self-baseline"><a href="tod.html">02</a></div>
-      <div class="col-7 d-none d-lg-inline text-small sans align-self-baseline text-center"><a href="tod.html">COMMEMORAZIONE</a></div>
+      <div class="col-7 d-none d-lg-inline text-small sans align-self-baseline text-center"><a href="tod.html"><span lang="it">COMMEMORAZIONE</span><span lang="eng">COMMEMORATION</span></a></div>
       <div class="col text-extralarge-bit align-self-baseline"><a href="tod.html">TOD</a></div>
     </div>
 
     <div class="row d-inline-flex align-items-lg-baseline align-items-center">
       <div class="col-4 col-lg-1 text-small sans align-self-baseline"><a href="protestars.html">03</a></div>
-      <div class="col-7 d-none d-lg-inline text-small sans align-self-baseline text-center"><a href="protestars.html">PROTESTA</a></div>
+      <div class="col-7 d-none d-lg-inline text-small sans align-self-baseline text-center"><a href="protestars.html"><span lang="it">PROTESTA</span><span lang="eng">PROTEST</span></a></div>
       <div class="col text-extralarge-bit align-self-baseline"><a href="protestars.html">PROTESTARS</a></div>
     </div>
 
   <div class="row d-inline-flex align-items-lg-baseline align-items-center">
     <div class="col-4 col-lg-1 text-small sans align-self-baseline"><a href="lusting.html">04</a></div>
-    <div class="col-7 d-none d-lg-inline text-small sans align-self-baseline text-center"><a href="lusting.html">CORTEGGIAMENTO</a></div>
+    <div class="col-7 d-none d-lg-inline text-small sans align-self-baseline text-center"><a href="lusting.html"><span lang="it">CORTEGGIAMENTO</span><span lang="eng">COURTSHIP</span></a></div>
     <div class="col text-extralarge-bit align-self-baseline"><a href="lusting.html">LUSTING</a></div>
   </div>
 
   <div class="row d-inline-flex align-items-lg-baseline align-items-center">
     <div class="col-4 col-lg-1 text-small sans align-self-baseline"><a href="12uomo.html">05</a></div>
-    <div class="col-7 d-none d-lg-inline text-small sans align-self-baseline text-center"><a href="12uomo.html">TIFOSERIA</a></div>
+    <div class="col-7 d-none d-lg-inline text-small sans align-self-baseline text-center"><a href="12uomo.html"><span lang="it">TIFOSERIA</span><span lang="eng">SPORTS CHEERING</span></a></div>
     <div class="col text-extralarge-bit align-self-baseline"><a href="12uomo.html">12°UOMO</a></div>
   </div>
 
 <div class="row d-inline-flex align-items-lg-baseline align-items-center">
   <div class="col-4 col-lg-1 text-small sans align-self-baseline"><a href="apto.html">06</a></div>
-  <div class="col-7 d-none d-lg-inline text-small sans align-self-baseline text-center"><a href="apto.html">SALUTO</a></div>
+  <div class="col-7 d-none d-lg-inline text-small sans align-self-baseline text-center"><a href="apto.html"><span lang="it">SALUTO</span><span lang="eng">GREETING</span></a></div>
   <div class="col text-extralarge-bit align-self-baseline"><a href="apto.html">APTO</a></div>
 </div>
 
 <div class="row d-inline-flex align-items-lg-baseline align-items-center">
   <div class="col-4 col-lg-1 text-small sans align-self-baseline"><a href="lineo.html">07</a></div>
-  <div class="col-7 d-none d-lg-inline text-small sans align-self-baseline text-center"><a href="lineo.html">SUPERSTIZIONE</a></div>
+  <div class="col-7 d-none d-lg-inline text-small sans align-self-baseline text-center"><a href="lineo.html"><span lang="it">SUPERSTIZIONE</span><span lang="eng">SUPERSTITION</span></a></div>
   <div class="col text-extralarge-bit align-self-baseline"><a href="lineo.html">LINEO</a></div>
 </div>
 
 <div class="row d-inline-flex align-items-lg-baseline align-items-center">
-<div class="col-4 col-lg-1 text-small sans align-self-baseline"><a href="vireo.html">08</a></div>
-<div class="col-7 d-none d-lg-inline text-small sans align-self-baseline text-center"><a href="vireo.html">VERGINITà</a></div>
-<div class="col text-extralarge-bit align-self-baseline"><a href="vireo.html">VIREO</a></div>
+<div class="col-4 col-lg-1 text-small sans align-self-baseline"><a href="persona.html">08</a></div>
+<div class="col-7 d-none d-lg-inline text-small sans align-self-baseline text-center"><a href="persona.html"><span lang="it">MASCHERA</span><span lang="eng">MASK</span></a></div>
+<div class="col text-extralarge-bit align-self-baseline"><a href="persona.html">PERSONA</a></div>
 </div>
 
 <div class="row d-inline-flex align-items-lg-baseline align-items-center">
 <div class="col-4 col-lg-1 text-small sans align-self-baseline"><a href="noxa.html">09</a></div>
-<div class="col-7 d-none d-lg-inline text-small sans align-self-baseline text-center"><a href="noxa.html">CONFESSIONE</a></div>
+<div class="col-7 d-none d-lg-inline text-small sans align-self-baseline text-center"><a href="noxa.html"><span lang="it">CONFESSIONE</span><span lang="eng">CONFESSION</span></a></div>
 <div class="col text-extralarge-bit align-self-baseline"><a href="noxa.html">NOXA</a></div>
 </div>
 
 <div class="row d-inline-flex align-items-lg-baseline align-items-center">
 <div class="col-4 col-lg-1 text-small sans align-self-baseline"><a href="oikia.html">10</a></div>
-<div class="col-7 d-none d-lg-inline text-small sans align-self-baseline text-center"><a href="oikia.html">OSPITALITà</a></div>
+<div class="col-7 d-none d-lg-inline text-small sans align-self-baseline text-center"><a href="oikia.html"><span lang="it">OSPITALITà</span><span lang="eng">HOSPITALITY</span></a></div>
 <div class="col text-extralarge-bit align-self-baseline"><a href="oikia.html">OIKIA</a></div>
 </div>
 
 <div class="row d-inline-flex align-items-lg-baseline align-items-center" style="margin-bottom: 0 !Important">
 <div class="col-4 col-lg-1 text-small sans align-self-baseline"><a href="viatora.html">11</a></div>
-<div class="col-7 d-none d-lg-inline text-small sans align-self-baseline text-center"><a href="viatora.html">PELLEGRINAGGIO</a></div>
+<div class="col-7 d-none d-lg-inline text-small sans align-self-baseline text-center"><a href="viatora.html"><span lang="it">PELLEGRINAGGIO</span><span lang="eng">PILGRIMAGE</span></a></div>
 <div class="col text-extralarge-bit align-self-baseline"><a href="viatora.html">VIATORA</a></div>
 </div>
   </div>
 </div>
-  </body>
+</body>
+
 
 <script language="JavaScript" type="text/javascript">
 
@@ -258,7 +273,9 @@ var carousel = new bootstrap.Carousel(myCarousel)
 
 </script>
 <script src="./assets/js/header.js"></script>
+<script src="./assets/js/language.js"></script>
 <script src="./assets/js/scroll-animation.js"></script>
 
-    <script> var dTop = vTop - 80 </script>
-  </html>
+<script> var dTop = vTop - 80 </script>
+
+</html>

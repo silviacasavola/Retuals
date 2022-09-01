@@ -18,6 +18,7 @@
 
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
   </head>
 
 
@@ -25,7 +26,7 @@
 
   <!-- HEADER -->
   <div class="d-flex justify-content-between align-items-center header sans vw-100">
-      <div class="d-lg-inline d-block"><a id="header-home"><img src="assets/img/logo.png"></a></div>
+      <div class="d-lg-inline d-block" id="header-home"><a id="header-home"><img src="assets/img/logo.png"></a></div>
       <div class="d-lg-inline-flex d-flex justify-content-between">
       <a href="about.html" class="navigator" id="header-about">ABOUT</a>
       <div id="projects-menu" class="navigator">PROJECTS</div>
@@ -34,50 +35,61 @@
 
 <main>
 
-<!-- SCHEME -->
-<div id="scheme" class="align-items-center">
-<div class="axes-index" id = "axes-index-1"> <div class="axes-index-name caps" id="individuale">individuale</div> <img class="axes-index-icon" src="assets/scheme/icon1.png"></div>
-<div class="axes-index" id = "axes-index-2"> <div class="axes-index-name caps" id="collettivo">collettivo</div> <img class="axes-index-icon" src="assets/scheme/icon2.png"></div>
-<div class="axes-index" id = "axes-index-3"> <div class="axes-index-name caps" id="laico">laico</div> <img class="axes-index-icon" src="assets/scheme/icon3.png"></div>
-<div class="axes-index" id = "axes-index-4"> <div class="axes-index-name caps" id="religioso">religioso</div> <img class="axes-index-icon" src="assets/scheme/icon4.png"></div>
 
-  <div id="scheme_img_container">
-     <img src="assets/scheme/axes.svg" id="axes">
-  </div>
+  <!-- SCHEME -->
+  <div id="scheme" class="align-items-center">
+  <div class="axes-index" id = "axes-index-1"> <div class="axes-index-name caps" id="individuale">individuale</div> <img class="axes-index-icon" src="assets/scheme/icon1.svg"></div>
+  <div class="axes-index" id = "axes-index-2"> <div class="axes-index-name caps" id="collettivo">collettivo</div> <img class="axes-index-icon" src="assets/scheme/icon2.svg"></div>
+  <div class="axes-index" id = "axes-index-3"> <div class="axes-index-name caps" id="laico">laico</div> <img class="axes-index-icon" src="assets/scheme/icon3.svg"></div>
+  <div class="axes-index" id = "axes-index-4"> <div class="axes-index-name caps" id="religioso">religioso</div> <img class="axes-index-icon" src="assets/scheme/icon4.svg"></div>
 
-  <div id="scheme_name_container">
-    <a class="sans caps rito" id="rito-1">Maschera</a>
-    <a href="tod.html" class="sans caps rito" id="rito-2">Commemorazione</a>
-    <a href="protestars.html" class="sans caps rito" id="rito-3">Protesta</a>
-    <a href="lusting.html" class="sans caps rito" id="rito-4">Corteggiamento</a>
-    <a href="12uomo.html" class="sans caps rito" id="rito-5">Tifoseria</a>
-    <a href="apto.html" class="sans caps rito" id="rito-6">Saluto</a>
-    <a href="lineo.html" class="sans caps rito" id="rito-7">Superstizione</a>
-    <a href="vireo.html" class="sans caps rito" id="rito-8">Verginità</a>
-    <a href="noxa.html" class="sans caps rito" id="rito-9">Confessione</a>
-    <a href="oikia.html" class="sans caps rito" id="rito-10">Ospitalità</a>
-    <a href="viatora.html" class="sans caps rito" id="rito-11">Pellegrinaggio</a>
-  </div>
+    <div id="scheme_img_container">
+       <img src="assets/scheme/axes.svg" id="axes">
+    </div>
 
-  <div class="info-nascosta" id="info">
-        <a class="sans caps rito2"></a><br>
-        <!-- <img style="height: 32px" class="rito-start" src="assets/scheme/icon1.png"> -->
-        <span class="sans caps" id="progetto"></span>
-        <!-- <img style="height: 32px" class="rito-end" src="assets/scheme/icon2.png"> -->
-        <img id="project-img">
-        <!-- <div id="project-line"><img id="project-line-id" src="assets/img/scheme/line.svg"></div> -->
-  </div>
-</div>
+    <div id="scheme_name_container">
+      <a class="sans caps rito" id="rito-1">Maschera</a>
+      <a href="tod.html" class="sans caps rito" id="rito-2">Commemorazione</a>
+      <a href="protestars.html" class="sans caps rito" id="rito-3">Protesta</a>
+      <a href="lusting.html" class="sans caps rito" id="rito-4">Corteggiamento</a>
+      <a href="12uomo.html" class="sans caps rito" id="rito-5">Tifoseria</a>
+      <a href="apto.html" class="sans caps rito" id="rito-6">Saluto</a>
+      <a href="lineo.html" class="sans caps rito" id="rito-7">Superstizione</a>
+      <a href="vireo.html" class="sans caps rito" id="rito-8">Verginità</a>
+      <a href="noxa.html" class="sans caps rito" id="rito-9">Confessione</a>
+      <a href="oikia.html" class="sans caps rito" id="rito-10">Ospitalità</a>
+      <a href="viatora.html" class="sans caps rito" id="rito-11">Pellegrinaggio</a>
+    </div>
 
-</main>
-
-<!-- MENU -->
-    <div id="menu" class="d-flex flex-column">
-      <div class="row d-inline-flex">
-          <div class="col-6 sans"><a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a></div>
-          <div class="col-6 sans text-end" style="-webkit-user-select: none" onclick="closeMenu()">PROJECTS</div>
+    <div class="info-nascosta" id="info">
+        <div id="project-line-container" style="position: absolute; margin: 1rem 0 0 1rem">
+        <svg id="project-line" version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <g fill="none" stroke="black" stroke-width="1.5">
+          <path stroke-dasharray="5,5">
+            <!-- <path stroke-dasharray="5,5" d="M0 0 l0 0"> -->
+            <!-- <path d="M498,494 c0,0 -468,2 -496,-490"/> -->
+            <!-- <path d="M598,599 C216,468 73,262 0,0" /> -->
+          </g>
+        <!-- <line style="line {stroke:rgb(0, 0, 0); stroke-width: 2" stroke-dasharray="5, 5" x1="0" y1="1" x2="600" y2="498" style="stroke-width: 1px;"></line> -->
+        </svg>
       </div>
 
+
+          <a class="sans caps rito2"></a><br>
+          <!-- <img style="height: 32px" class="rito-start" src="assets/scheme/icon1.png"> -->
+          <span class="sans caps" id="progetto"></span>
+          <!-- <img style="height: 32px" class="rito-end" src="assets/scheme/icon2.png"> -->
+          <img id="project-img">
+          <!-- <div id="project-line"><img id="project-line-id" src="assets/img/scheme/line.svg"></div> -->
+    </div>
+  </div>
+
+  </main>
+
+<!-- MENU -->
+<div href="javascript:void(0)" id="closebtn" class="sans" onClick="closeMenu()">&times;</div>
+
+<div id="menu" class="d-flex flex-column">
 
   <div id="menu-list-container" class="d-inline-flex flex-column justify-content-center" style="height: 100%">
 
@@ -148,9 +160,15 @@
 </div>
   </div>
 </div>
-
 </body>
 
-<script src="./assets/js/header.js"></script>
-<script src="./assets/js/scheme.js"></script>
+
+    <script src="./assets/js/header.js"></script>
+    <script src="./assets/js/scheme.js"></script>
+
+<!-- <script>
+$("#axes-index-3").css("width", $("#axes-index-3").height());
+$("#laico").css("transform", "rotate(-90deg)");
+$("#religioso").css("width", $("#axes-index-4").height());
+</script> -->
   </html>

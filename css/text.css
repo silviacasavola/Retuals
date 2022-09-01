@@ -45,6 +45,10 @@ body {
   font-family: "Editorial New";
   font-weight: lighter; }
 
+.text-bit {
+  font-family: "NeueBit";
+  font-size: 1.5rem; }
+
 .text-extralarge-bit {
   font-family: "NeueBit";
   font-weight: bold;
