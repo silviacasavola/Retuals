@@ -317,7 +317,7 @@ body {
     font-size: 5vw; }
   #menu-intro {
     position: absolute;
-    padding: 20px 0 20px 20px;
+    padding: 20px 10px 20px 20px;
     bottom: 5vh;
     width: 100%;
     text-transform: uppercase; }
