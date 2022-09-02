@@ -268,7 +268,7 @@ body::-webkit-scrollbar {
   #menu {
     width: 100vw; }
   #menu-list-container .row {
-    margin-bottom: 2vh; } }
+    margin-bottom: 1vh; } }
 
 body {
   cursor: pointer; }
