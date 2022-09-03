@@ -178,8 +178,11 @@ riton.addEventListener("mouseover",(function() {
   // $(".rito-start").css("left", prj[index].ritox + 10 + "%");
   // $(".rito-start").css("top", prj[index].ritoy + "%");
 
-  $(".rito2").attr('href', + prj[index].progetto + ".html" );
+  // $(".rito2").attr('href', + prj[index].progetto + ".html" );
 
+  $("#info").click(function () {
+    window.open(prj[index].progetto + ".html", "_self");
+  })
 
   $("#progetto").html(prj[index].progetto);
   $("#progetto").css("left", prj[index].prjx + "%");
@@ -247,4 +250,11 @@ $(".axes-index").mouseover(function () {
 $(".axes-index").mouseout(function () {
   $(".axes-index-icon").css("opacity", "1");
   $(".axes-index-name").css("opacity", "0");
+})
+
+
+$(window).load(function ()  {
+  if (window.innerWidth < 992) {
+  window.open("index.html", "_self");
+}
 })
