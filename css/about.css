@@ -283,7 +283,8 @@ main {
     position: fixed;
     bottom: 30px; }
   #big-text-section {
-    white-space: pre-line; }
+    /* white-space: pre-line;  */
+  }
   #credits a img {
     width: 30px; }
   #imgpolimi {
