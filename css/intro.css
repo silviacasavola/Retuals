@@ -278,7 +278,10 @@ body {
     text-align: center; }
 
 #intro-logo {
-  width: 100%;
+  /* width: 100%; */
+  /* CAMBIO */
+  left: 0;
+  right 0;
   top: 50%;
   transform: translate(0, -110%);
   text-align: center; }
@@ -311,7 +314,7 @@ body {
 
 @media (max-width: 991.98px) {
   #intro-logo img {
-    width: 70%;
+    width: 50%;
     padding-bottom: 1rem; }
   #intro-logo div {
     font-size: 5vw; }
