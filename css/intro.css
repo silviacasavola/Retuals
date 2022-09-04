@@ -314,6 +314,9 @@ body {
     opacity: 1; } }
 
 @media (max-width: 991.98px) {
+  #intro-logo {
+    top: 40vh;
+  }
   #intro-logo img {
     width: 50%;
     padding-bottom: 1rem; }
