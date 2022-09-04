@@ -227,7 +227,8 @@ if (prj[index].ritoy > prj[index].prjy && prj[index].ritox < prj[index].prjx) {
 
 $("#info").mouseout(function() {
   $( "#info").css( "display", "none" );
-  $("#scheme_name_container").css("display", "black")
+  $("#scheme_name_container").css("display", "block");
+  $("#project-img").attr("src", "")
 })
 
 }
