@@ -274,7 +274,8 @@ body {
   cursor: pointer; }
   body #intro-logo, body #intro-advice {
     position: absolute;
-    width: 100%;
+    left: 0;
+    right: 0;
     text-align: center; }
 
 #intro-logo {
